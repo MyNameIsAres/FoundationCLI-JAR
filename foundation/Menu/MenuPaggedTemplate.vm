@@ -1,0 +1,30 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.ClickType;
+import org.bukkit.inventory.ItemStack;
+import org.mineacademy.fo.menu.MenuPagged;
+
+
+public class ${CLASS_NAME} extends MenuPagged<${TYPE}> {
+
+    public ${CLASS_NAME}(Iterable<${TYPE}> pages) {
+        super(pages);
+    }
+
+     @Override
+    protected ItemStack convertToItemStack(${TYPE} ${TYPE_VARIABLE}) {
+        return null;
+    }
+
+    @Override
+    protected void onPageClick(Player player, ${TYPE} ${TYPE_VARIABLE}, ClickType clickType) {
+
+    }
+
+    @Override
+    protected String[] getInfo() {
+        return super.getInfo();
+    }
+}

@@ -1,0 +1,22 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.bukkit.inventory.ItemStack;
+import org.mineacademy.fo.menu.Menu;
+
+public class ${CLASS_NAME} extends Menu {
+
+    public ${CLASS_NAME}() {
+        
+    }
+
+    @Override
+    public ItemStack getItemAt(int slot) {
+        return super.getItemAt(slot);
+    }
+
+    @Override
+    protected String[] getInfo() {
+        return super.getInfo();
+    }
+}

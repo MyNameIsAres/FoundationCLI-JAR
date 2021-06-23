@@ -1,0 +1,37 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.bukkit.entity.Player;
+import org.mineacademy.fo.remain.CompMaterial;
+import org.mineacademy.orion.classes.model.ClassBase;
+
+public class ${CLASS_NAME} extends Quest {
+
+    protected ${CLASS_NAME} {
+        super("${NAME}");
+    }
+
+    @Override
+    public Quest getNext(final ClassBase classBase) {
+        return null;
+    }
+
+    @Override
+    public CompMaterial getIcon {
+        return CompMaterial.BEACON;
+    }
+
+    @Override
+	public String[] getMenuLore() {
+		return new String[] {
+				""
+		};
+	}
+
+    @Override
+	public String getCompletion(final Player player, final Object completionData) {
+		return "";
+	}
+
+
+}

@@ -1,0 +1,18 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.mineacademy.fo.collection.SerializedMap;
+import org.mineacademy.fo.database.SimpleFlatDatabase;
+
+public class ${CLASS_NAME} extends SimpleFlatDatabase<${TYPE}> {
+
+    @Override
+    protected void onLoad(SerializedMap serializedMap, ${TYPE} ${TYPE_PARAM}) {
+
+    }
+
+    @Override
+    protected SerializedMap onSave(${TYPE} ${TYPE_PARAM}) {
+        return null;
+    }
+}

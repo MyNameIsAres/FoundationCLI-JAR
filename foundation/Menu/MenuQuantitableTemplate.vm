@@ -1,0 +1,36 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.mineacademy.fo.menu.Menu;
+import org.mineacademy.fo.menu.MenuQuantitable;
+import org.mineacademy.fo.menu.model.MenuQuantity;
+
+
+public class ${CLASS_NAME} extends Menu implements MenuQuantitable{
+
+    public ${CLASS_NAME}() {
+     
+    }
+
+    // Can be replaced with @Getter Lombok annotation
+    @Override
+    public MenuQuantity getQuantity() {
+        return null;
+    }
+
+    // Can be replaced with @Setter Lombok annotation
+    @Override
+    public void setQuantity(MenuQuantity menuQuantity) {
+
+    }
+
+    @Override
+    public ItemStack getItemAt(int slot) {
+        return super.getItemAt(slot);
+    }
+
+    @Override
+    protected String[] getInfo() {
+        return super.getInfo();
+    }
+}

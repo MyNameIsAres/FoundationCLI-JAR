@@ -1,0 +1,21 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+
+public class ${CLASS_NAME} implements Listener {
+
+    @EventHandler
+	public void onEntityDamageByEntity(final EntityDamageByEntityEvent event) {
+	    if (!(event.getDamager() instanceof LivingEntity) || !(event.getEntity() instanceof LivingEntity))
+			return;
+
+		final LivingEntity damager = (LivingEntity) event.getDamager();
+		final LivingEntity victim = (LivingEntity) event.getEntity();
+
+    }    
+
+}

@@ -1,0 +1,17 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDeathEvent;
+
+public class ${CLASS_NAME} implements Listener {
+
+	@EventHandler
+	public void onSpawnerSpawn(final SpawnerSpawnEvent event) {
+		final CreatureSpawner spawner = event.getSpawner();
+
+    }    
+
+}

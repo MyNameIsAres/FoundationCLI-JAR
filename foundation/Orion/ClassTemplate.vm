@@ -1,0 +1,19 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+public class ${CLASS_NAME} extends ClassBase {
+
+    protected ${CLASS_NAME} {
+        super("${NAME}")
+    }
+
+
+	@Override
+	protected boolean canUpgrade(final Player player, final PlayerCache cache, final int nextTier) {
+		return false;
+	}
+
+    @Override
+	protected void onUpgrade(final Player player, final int nextTier) {
+
+	}
+}

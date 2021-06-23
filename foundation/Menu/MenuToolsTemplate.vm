@@ -1,0 +1,22 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.mineacademy.fo.menu.MenuTools;
+
+
+public class ${CLASS_NAME} extends MenuTools {
+
+    public ${CLASS_NAME}() {
+     
+    }
+
+    @Override
+    protected Object[] compileTools() {
+        return new Object[0];
+    } 
+
+    @Override
+    protected String[] getInfo() {
+        return super.getInfo();
+    }
+}

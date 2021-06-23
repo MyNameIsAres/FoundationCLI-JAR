@@ -1,0 +1,12 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import org.mineacademy.fo.settings.SimpleSettings;
+
+public class ${CLASS_NAME} extends SimpleSettings {
+
+    @Override
+    protected int getConfigVersion() {
+        return 0;
+    }
+
+}

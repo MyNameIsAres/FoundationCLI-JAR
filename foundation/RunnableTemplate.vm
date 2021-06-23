@@ -1,0 +1,12 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import org.bukkit.scheduler.BukkitRunnable;
+
+public class ${CLASS_NAME} extends BukkitRUnnable {
+
+    @Override
+    public void run() {
+        
+    }
+
+}

@@ -1,0 +1,22 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import org.bukkit.enchantments.Enchantment;
+import org.mineacademy.fo.model.SimpleEnchantment;
+import org.mineacademy.fo.model.SimpleEnchantmentTarget;
+
+
+public class ${CLASS_NAME} extends SimpleEnchantment {
+
+    // Add a @Getter with Lombok!
+    private static final Enchant intance = new ${CLASS_NAME}();
+
+    private ${CLASS_NAME} {
+        super("", 0);
+    }
+
+    @Override
+    public SimpleEnchantmentTarget getCustomItemTarget() {
+        return SimpleEnchantmentTarget.BREAKABLE;
+    }
+
+}

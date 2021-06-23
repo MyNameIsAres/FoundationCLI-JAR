@@ -1,0 +1,11 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.mineacademy.fo.command.SimpleCommandGroup;
+
+public class ${CLASS_NAME} extends SimpleCommandGroup {
+
+	protected void registerSubcommands() {
+		
+	}
+}

@@ -1,0 +1,27 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.bukkit.Location;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.LivingEntity;
+import org.mineacademy.fo.Valid;
+import org.mineacademy.fo.model.HookManager;
+import org.mineacademy.orion.hook.CitizensHook;
+
+public class ${CLASS_NAME} extends NPCCitizen {
+
+    public ${CLASS_NAME} {
+        super("${NAME}", EntityType.VILLAGER);
+
+        setCustomName("&f" + getName());
+    }
+
+    @Override
+	protected void onNPCSpawn(final Location location, final LivingEntity entity) {
+		Valid.checkBoolean(entity instanceof Villager, "NPC must be Villager but got " + entity.getClass().getSimpleName());
+
+		if (HookManager.isCitizensLoaded())
+			CitizensHook.applyNavigation(this, entity);
+	}
+
+}

@@ -1,0 +1,45 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.bukkit.entity.Player;
+import org.mineacademy.fo.settings.YamlSectionConfig;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.UUID;
+
+public class ${CLASS_NAME} extends YamlSectionConfig {
+
+    private static final Map<UUID, ${NAME}> cacheMap = new HashMap<>();
+
+    private final UUID uuid;
+
+    protected ${NAME}(final UUID uuid) {
+        super(uuid.toString());
+
+        this.uuid = uuid;
+
+        loadConfiguration(NO_DEFAULT, "data.db");
+    }
+
+    @Override
+    protected void onLoadFinish() {
+
+    }
+
+    public static ${NAME} getCache(final Player player) {
+		return getCache(player.getUniqueId());
+	}
+
+	public static ${NAME} getCache(final UUID uuid) {
+		${NAME} cache = cacheMap.get(uuid);
+
+		if (cache == null) {
+			cache = new ${NAME}(uuid);
+
+			cacheMap.put(uuid, cache);
+		}
+
+		return cache;
+	}
+
+}

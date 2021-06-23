@@ -1,0 +1,26 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.ItemStack;
+import org.mineacademy.fo.menu.tool.Tool;
+
+public class ${CLASS_NAME} extends Tool {
+
+    private static final Tool instance = new ${CLASS_NAME}();
+
+    // Optionally remove this with lombok's @Getter annotation
+	public static Tool getInstance() {
+		return instance;
+	}
+
+    @Override
+    public ItemStack getItem() {
+        return null;
+    }
+
+    @Override
+    protected void onBlockClick(final PlayerInteractEvent playerInteractEvent) {
+
+    }
+}

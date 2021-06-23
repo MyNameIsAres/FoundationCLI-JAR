@@ -1,0 +1,9 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+
+public class ${CLASS_NAME} implements Listener {
+
+}

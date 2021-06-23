@@ -1,0 +1,15 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+import org.mineacademy.fo.conversation.SimpleConversation;
+import org.bukkit.conversations.Prompt;
+
+public class ${CLASS_NAME} extends SimpleConversation {
+
+    @Override
+    protected Prompt getFirstPrompt() {
+        return null;
+    }
+
+
+}
