@@ -13,7 +13,7 @@ public class ${CLASS_NAME} extends MenuPagged<${TYPE}> {
         super(pages);
     }
 
-     @Override
+    @Override
     protected ItemStack convertToItemStack(${TYPE} ${TYPE_VARIABLE}) {
         return null;
     }

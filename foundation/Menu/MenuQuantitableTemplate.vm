@@ -6,7 +6,7 @@ import org.mineacademy.fo.menu.MenuQuantitable;
 import org.mineacademy.fo.menu.model.MenuQuantity;
 
 
-public class ${CLASS_NAME} extends Menu implements MenuQuantitable{
+public class ${CLASS_NAME} extends Menu implements MenuQuantitable {
 
     public ${CLASS_NAME}() {
      

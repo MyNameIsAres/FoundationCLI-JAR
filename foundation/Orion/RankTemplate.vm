@@ -3,11 +3,10 @@
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
-import org.mineacademy.orion.PlayerCache;
 
 public class ${CLASS_NAME} extends Rank {
 
-    protected ${CLASS_NAME} {
+    protected ${CLASS_NAME}() {
         super("${NAME}", ChatColor.GREEN);
     } 
 
@@ -18,7 +17,7 @@ public class ${CLASS_NAME} extends Rank {
 
     @Override
     public Rank getNext() {
-        return null;;
+        return null;
     }
     
 }

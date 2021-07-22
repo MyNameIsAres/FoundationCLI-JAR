@@ -6,11 +6,11 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
 import org.mineacademy.fo.Valid;
 import org.mineacademy.fo.model.HookManager;
-import org.mineacademy.orion.hook.CitizensHook;
+
 
 public class ${CLASS_NAME} extends NPCCitizen {
 
-    public ${CLASS_NAME} {
+    public ${CLASS_NAME}() {
         super("${NAME}", EntityType.VILLAGER);
 
         setCustomName("&f" + getName());

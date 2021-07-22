@@ -1,8 +1,11 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
 
+
+import org.bukkit.entity.EntityType;
+
 public class ${CLASS_NAME} extends Boss {
 
-    protected ${CLASS_NAME} {
+    protected ${CLASS_NAME}() {
         super("${NAME}", EntityType.SKELETON);
 
         setCustomName("${NAME}");

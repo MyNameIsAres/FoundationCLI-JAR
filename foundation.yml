@@ -1,0 +1,13 @@
+project_path: your-project-package-name-goes-here
+command_location: /command
+conversation_location: /conversation
+listener_location: /events
+database_location: /mysql
+enchant_location: /enchantment
+rank_location: /rank
+player_class_location: /classes/model
+quest_location: /quest/model
+boss_location: /boss/model
+boss_skill_location: /boss/skill
+npc_location: /boss/npc/model
+player_cache_location: /

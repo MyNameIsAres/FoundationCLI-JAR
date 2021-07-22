@@ -3,11 +3,10 @@
 
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.remain.CompMaterial;
-import org.mineacademy.orion.classes.model.ClassBase;
 
 public class ${CLASS_NAME} extends Quest {
 
-    protected ${CLASS_NAME} {
+    protected ${CLASS_NAME}() {
         super("${NAME}");
     }
 
@@ -17,7 +16,7 @@ public class ${CLASS_NAME} extends Quest {
     }
 
     @Override
-    public CompMaterial getIcon {
+    public CompMaterial getIcon() {
         return CompMaterial.BEACON;
     }
 
@@ -32,6 +31,4 @@ public class ${CLASS_NAME} extends Quest {
 	public String getCompletion(final Player player, final Object completionData) {
 		return "";
 	}
-
-
 }

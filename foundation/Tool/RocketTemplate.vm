@@ -5,7 +5,7 @@ import org.bukkit.entity.Projectile;
 import org.bukkit.inventory.ItemStack;
 import org.mineacademy.fo.menu.tool.Rocket;
 
-public class ${CLASS_NAME} extends BlockTool {
+public class ${CLASS_NAME} extends Rocket {
 
     private static final Tool instance = new ${CLASS_NAME}();
 
